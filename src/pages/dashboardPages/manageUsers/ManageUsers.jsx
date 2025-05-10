@@ -10,12 +10,15 @@ import Swal from 'sweetalert2';
 
 const ManageUsers = () => {
   const [formOne] = Form.useForm();
+  const [formTwo] = Form.useForm();
   const [selectionType, setSelectionType] = useState('checkbox');
   const [searchText, setSearchText] = useState('')
   const [modalOpenOne, setModalOpenOne] = useState(false)
+  const [modalOpenTwo, setModalOpenTwo] = useState(false)
   const [value, setValue] = useState(1);
 
 
+  // modal one
   const onFinishOne = () => {
     console.log('click')
   }
@@ -29,6 +32,22 @@ const ManageUsers = () => {
   }
   const handleMondalCancelOneOk = () => {
     setModalOpenOne(false)
+  }
+
+  // modal two
+  const onFinishTwo = () => {
+    console.log('click')
+  }
+
+  const showModalTwo = () => {
+    setModalOpenTwo(true)
+  }
+
+  const handleMondalOpenTwoOk = () => {
+
+  }
+  const handleMondalCancelTwoOk = () => {
+    setModalOpenTwo(false)
   }
 
 
@@ -116,13 +135,18 @@ const ManageUsers = () => {
 
           </button>
           <button
-          onClick={()=>handleDelete()}
+            onClick={() => showModalTwo()}
             className="bg-secondary px-3 py-1 rounded "
           >
-            <svg width="34" height="38" viewBox="0 0 34 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="34" height="38" rx="6" fill="#FFE8E8" />
-              <path d="M24 11H20.5L19.5 10H14.5L13.5 11H10V13H24M11 26C11 26.5304 11.2107 27.0391 11.5858 27.4142C11.9609 27.7893 12.4696 28 13 28H21C21.5304 28 22.0391 27.7893 22.4142 27.4142C22.7893 27.0391 23 26.5304 23 26V14H11V26Z" fill="#FF5353" />
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask id="mask0_192_7314" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                <rect width="24" height="24" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_192_7314)">
+                <path d="M2 24V20H22V24H2ZM6 16H7.4L15.2 8.225L13.775 6.8L6 14.6V16ZM4 18V13.75L15.2 2.575C15.3833 2.39167 15.5958 2.25 15.8375 2.15C16.0792 2.05 16.3333 2 16.6 2C16.8667 2 17.125 2.05 17.375 2.15C17.625 2.25 17.85 2.4 18.05 2.6L19.425 4C19.625 4.18333 19.7708 4.4 19.8625 4.65C19.9542 4.9 20 5.15833 20 5.425C20 5.675 19.9542 5.92083 19.8625 6.1625C19.7708 6.40417 19.625 6.625 19.425 6.825L8.25 18H4Z" fill="#E53E3E" />
+              </g>
             </svg>
+
 
           </button>
         </div>
@@ -232,11 +256,12 @@ const ManageUsers = () => {
         dataSource={data}
       />
 
+      {/* modal one */}
       <Modal
         centered
         title={
           <div className="text-center bg-primary text-[#ffffff] py-4 font-degular text-[18px]  font-semibold rounded-t-lg">
-            Update Image
+            Change verified status
           </div>
         }
         open={modalOpenOne}
@@ -264,6 +289,66 @@ const ManageUsers = () => {
                   options={[
                     { value: 'Verified', label: 'verified' },
                     { value: 'Unverified', label: 'Unverified' },
+                  ]}
+                />
+              </div>
+
+              <Button
+                htmlType="submit"
+                block
+                style={{
+                  backgroundColor: "#00C49A",
+                  color: "#ffffff",
+                  fontSize: "20px",
+                  fontWeight: "600",
+                  height: "60px",
+                  borderRadius: "20px",
+                  paddingInline: "20px",
+                  marginTop: "20px",
+                  border: "none",
+
+                }}
+              >
+                Done
+              </Button>
+            </div>
+          </Form>
+        </div>
+      </Modal>
+
+      {/* modal two */}
+      <Modal
+        centered
+        title={
+          <div className="text-center bg-primary text-[#ffffff] py-4 font-degular text-[18px]  font-semibold rounded-t-lg">
+           Change profile status
+          </div>
+        }
+        open={modalOpenTwo}
+        onOk={handleMondalOpenTwoOk}
+        onCancel={handleMondalCancelTwoOk}
+        footer={null}
+        width={600}
+        className='custom-service-modal'
+        maskStyle={{ backgroundColor: 'rgba(134, 134, 134, 0.4)' }}
+      >
+
+        <div className="p-8">
+          <Form form={formTwo} onFinish={onFinishTwo}>
+            <div className="space-y-3">
+              {/* car image */}
+              <div className="w-full flex justify-center items-center border border-[#ccc] p-4 rounded-xl mb-10">
+                <Radio.Group
+                  style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: 8,
+                  }}
+                  onChange={onChange}
+                  value={value}
+                  options={[
+                    { value: 'Ban', label: 'ban' },
+                    { value: 'Unban', label: 'unban' },
                   ]}
                 />
               </div>
