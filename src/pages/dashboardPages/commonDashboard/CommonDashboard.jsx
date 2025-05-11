@@ -8,8 +8,8 @@ const CommonDashboard = () => {
                 <div className="col-span-4 h-[149px] bg-[#ffff]  p-[20px]  flex justify-between items-center border rounded-[20px]">
                     <div className="w-full flex justify-between ">
                         <div>
-                            <h2 className=" font-degular text-[24px] text-[#454545]">Monthly active users</h2>
-                            <h2 className="font-semibold font-degular text-[36px] ">22k</h2>
+                            <h2 className=" font-OpenSans text-[24px] text-[#454545]">Monthly active users</h2>
+                            <h2 className="font-semibold font-OpenSans text-[36px] ">22k</h2>
                         </div>
                         <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_183_1337)">
@@ -40,8 +40,8 @@ const CommonDashboard = () => {
                 <div className="col-span-4 h-[149px] bg-[#ffff]  p-[20px]  flex justify-between items-center border rounded-[20px]">
                     <div className="w-full flex justify-between ">
                         <div>
-                            <h2 className=" font-degular text-[24px] text-[#454545]">Daily active users</h2>
-                            <h2 className="font-semibold font-degular text-[36px] ">22k</h2>
+                            <h2 className=" font-OpenSans text-[24px] text-[#454545]">Daily active users</h2>
+                            <h2 className="font-semibold font-OpenSans text-[36px] ">22k</h2>
                         </div>
                         <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_183_1347)">
@@ -68,8 +68,8 @@ const CommonDashboard = () => {
                 <div className="col-span-4 h-[149px] bg-[#ffff]  p-[20px]  flex justify-between items-center border rounded-[20px]">
                     <div className="w-full flex justify-between ">
                         <div>
-                            <h2 className=" font-degular text-[24px] text-[#454545]">Sign up per month</h2>
-                            <h2 className="font-semibold font-degular text-[36px] ">22k</h2>
+                            <h2 className=" font-OpenSans text-[24px] text-[#454545]">Sign up per month</h2>
+                            <h2 className="font-semibold font-OpenSans text-[36px] ">22k</h2>
                         </div>
                         <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_183_1356)">
@@ -105,7 +105,7 @@ const CommonDashboard = () => {
             </div>
 
             {/* chart component */}
-            <div className="py-8 px-4 mt-8 bg-[#ffff] rounded-[20px]">
+            <div className="py-8 px-4 font-OpenSans mt-8 bg-[#ffff] rounded-[20px]">
                 <p className="text-[16px] text-[#454545]">Statics Analytics</p>
                 <h2 className="text-[36px] font-bold">Monthly active users</h2>
 

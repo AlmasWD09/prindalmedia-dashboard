@@ -109,10 +109,10 @@ const DashboardLayout = () => {
                 return (
                     <>
                         <img src="/photo1.png" alt="" />
-                        <h1 className="text-[#333333] font-roboto font-semibold text-[30px]">
+                        <h1 className="text-[#333333] font-OpenSans font-semibold text-[30px]">
                             Overview
                         </h1>
-                        <p className="font-normal text-lg -mt-3 mb-4">
+                        <p className="font-normal font-OpenSans text-lg -mt-3 mb-4">
                             Here you can see the percentage of every type if users.
                         </p>
                     </>
@@ -120,10 +120,10 @@ const DashboardLayout = () => {
             case "/manage-users":
                 return (
                     <>
-                        <h1 className="text-[#333333] font-roboto font-semibold text-[30px]">
+                        <h1 className="text-[#333333] font-OpenSans font-semibold text-[30px]">
                             Manage users
                         </h1>
-                        <p className="font-normal text-lg -mt-3 mb-4">
+                        <p className="font-normal font-OpenSans text-lg -mt-3 mb-4">
                             You can manage every users access. You can ban users & also can unbanned users.
                         </p>
                     </>
@@ -131,10 +131,10 @@ const DashboardLayout = () => {
             case "/post-listing":
                 return (
                     <>
-                        <h1 className="text-[#333333] font-roboto font-semibold text-[30px]">
+                        <h1 className="text-[#333333] font-OpenSans font-semibold text-[30px]">
                             Post Listing
                         </h1>
-                        <p className="font-normal text-lg -mt-3 mb-4">
+                        <p className="font-normal font-OpenSans text-lg -mt-3 mb-4">
                             You can manage access to every post. You can ban posts and also unban them.
                         </p>
                     </>
@@ -145,7 +145,7 @@ const DashboardLayout = () => {
                         <h1 className="text-[#333333] font-semibold text-[30px]">
                             My Profile
                         </h1>
-                        <p className="font-normal text-lg -mt-3 mb-4">
+                        <p className="font-normal font-OpenSans text-lg -mt-3 mb-4">
                             You can manage every users access. You can ban users & also can unbanned users.
                         </p>
                     </>
@@ -161,7 +161,7 @@ const DashboardLayout = () => {
 
     return (
         <>
-            <Layout>
+            <Layout style={{fontFamily:"OpenSans"}}>
                 <Sider
                     width={300}
                     className="sidebar-menu" // custom class add

@@ -11,7 +11,7 @@ const DashboardCreateNewPassword = () => {
     }
     return (
         <>
-            <div className="h-dvh grid grid-cols-2 border border-gray-700  ">
+            <div className="h-dvh font-OpenSans grid grid-cols-2 border border-gray-700  ">
                 {/* image  */}
                 <div className="flex items-center p-3  justify-center ">
                     <div
@@ -29,10 +29,10 @@ const DashboardCreateNewPassword = () => {
                     <div className="h-[80vh] bg-white w-[536px]  shadow-xl p-8 rounded-2xl">
                         <div className="text-center pb-16">
                             <img src="/Savorly.svg" alt="Logo" className="mx-auto py-6 w-[70%] object-cover cursor-pointer" />
-                            <h1 className="font-bold text-3xl font-degular text-[40px] mb-6">
+                            <h1 className="font-bold text-3xl font-OpenSans text-[40px] mb-6">
                                Create new password
                             </h1>
-                            <p className="font-degular font-normal text-[#3A3A3A]">
+                            <p className="font-OpenSans font-normal text-[#3A3A3A]">
                                You have to create new password to continue
                             </p>
                         </div>
@@ -41,7 +41,7 @@ const DashboardCreateNewPassword = () => {
                         <Form layout="vertical" onFinish={onFinish} className="">
                             {/* New Password Field */}
                             <div>
-                                <p className="text-[24px] font-degular">New password</p>
+                                <p className="text-[24px] font-OpenSans">New password</p>
                                 <Form.Item
                                     name="password"
                                     rules={[{ required: true, message: "Please enter your new password" }]}
@@ -56,7 +56,7 @@ const DashboardCreateNewPassword = () => {
 
                             {/* Confirm Password Field */}
                             <div>
-                                <p className="text-[24px] font-degular">Confirm Password</p>
+                                <p className="text-[24px] font-OpenSans">Confirm Password</p>
                                 <Form.Item
                                     name="confirmPassword"
                                     rules={[{ required: true, message: "Please confirm your password" }]}

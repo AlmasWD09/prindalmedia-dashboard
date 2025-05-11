@@ -255,7 +255,7 @@ const PostListing = () => {
             <Modal
                 centered
                 title={
-                    <div className="text-center bg-primary text-[#ffffff] py-4 font-degular text-[18px]  font-semibold rounded-t-lg">
+                    <div className="text-center bg-primary text-[#ffffff] py-4 font-OpenSans text-[18px]  font-semibold rounded-t-lg">
                         Post listing
                     </div>
                 }
@@ -379,7 +379,7 @@ const PostListing = () => {
             < Modal
                 centered
                 title={
-                    < div className="text-center bg-primary text-[#ffffff] py-4 font-degular text-[18px]  font-semibold rounded-t-lg" >
+                    < div className="text-center bg-primary text-[#ffffff] py-4 font-OpenSans text-[18px]  font-semibold rounded-t-lg" >
                         Change verified status
                     </div >
                 }

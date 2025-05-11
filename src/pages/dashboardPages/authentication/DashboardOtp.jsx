@@ -19,7 +19,7 @@ const DashboardOtp = () => {
 
     return (
         <>
-            <div className="h-dvh grid grid-cols-2 border border-gray-700  ">
+            <div className="h-dvh font-OpenSans grid grid-cols-2 border border-gray-700  ">
                 {/* image  */}
                 <div className="flex items-center p-3  justify-center ">
                     <div
@@ -37,10 +37,10 @@ const DashboardOtp = () => {
                     <div className="h-[60vh] bg-white w-[536px]  shadow-xl p-8 rounded-2xl">
                         <div className="text-center pb-16">
                             <img src="/Savorly.svg" alt="Logo" className="mx-auto py-6 w-[70%] object-cover cursor-pointer" />
-                            <h1 className="font-bold text-3xl font-degular text-[40px] mb-6">
+                            <h1 className="font-bold text-3xl font-OpenSans text-[40px] mb-6">
                                 Verify OTP
                             </h1>
-                            <p className="font-degular font-normal text-[#3A3A3A]">
+                            <p className="font-OpenSans font-normal text-[#3A3A3A]">
                                 We have sent 6 digits code in your email
                             </p>
                         </div>

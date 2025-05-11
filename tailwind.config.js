@@ -10,7 +10,7 @@ export default {
         'primary':'#00C49A', 
       },
       fontFamily: {
-        'roboto': ["Roboto", "serif"],
+        'OpenSans': ["Open Sans", "serif"],
       },
     },
   },
