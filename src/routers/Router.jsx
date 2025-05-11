@@ -9,6 +9,9 @@ import DashboardLogin from "../pages/dashboardPages/authentication/DashboardLogi
 import DashboardForgetPassword from "../pages/dashboardPages/authentication/DashboardForgetPassword";
 import DashboardOtp from "../pages/dashboardPages/authentication/DashboardOtp";
 import DashboardCreateNewPassword from "../pages/dashboardPages/authentication/DashboardCreateNewPassword";
+import Report from "../pages/dashboardPages/report/Report";
+import TramsAandCondition from "../pages/dashboardPages/tramsAandCondition/TramsAandCondition";
+import PrivacyPolicy from "../pages/dashboardPages/privacyPolicy/PrivacyPolicy";
 
 
 const router = createBrowserRouter([
@@ -30,8 +33,20 @@ const router = createBrowserRouter([
                 element: <PostListing />
             },
             {
+                path: "/report",
+                element: <Report />
+            },
+            {
                 path: "/profile",
                 element: <MyProfile />
+            },
+            {
+                path: "/trams&condition",
+                element: <TramsAandCondition />
+            },
+            {
+                path: "/privacy-policy",
+                element: <PrivacyPolicy />
             },
 
         ]

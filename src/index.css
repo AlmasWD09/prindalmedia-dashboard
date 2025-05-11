@@ -12,8 +12,11 @@ button.ant-btn.css-dev-only-do-not-override-1m2bkf9.ant-btn-primary.ant-btn-colo
 }
 
 
+/* setting title color ========================== */
 
-
+span.ant-menu-title-content {
+    color: #888888;
+}
 
 /* ===================   jodit editor ============================  */
 .jodit,
@@ -32,7 +35,6 @@ button.ant-btn.css-dev-only-do-not-override-1m2bkf9.ant-btn-primary.ant-btn-colo
 
 /*================ ant modal custom style start ============= */
 .ant-modal-content {
-  background-color: green !important;
   padding: 0px !important;
 
 }

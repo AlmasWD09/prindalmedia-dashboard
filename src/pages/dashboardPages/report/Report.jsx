@@ -7,7 +7,7 @@ import { Button, Modal } from 'antd';
 
 
 
-const PostListing = () => {
+const Report = () => {
     const [formOne] = Form.useForm();
     const [selectionType, setSelectionType] = useState('checkbox');
     const [searchText, setSearchText] = useState('')
@@ -228,13 +228,18 @@ const PostListing = () => {
                 centered
                 title={
                     <div className="text-center bg-primary text-[#ffffff] py-4 font-OpenSans text-[18px]  font-semibold rounded-t-lg">
-                        Post listing
+                       Active Reports
                     </div>
                 }
                 open={modalOpenOne}
                 onOk={handleMondalOpenOneOk}
                 onCancel={handleMondalCancelOneOk}
-                footer={null}
+                footer={
+                    <div className='pb-4 flex items-center gap-4 justify-end mx-4'>
+                        <button className='p-2 px-8 border border-[#ccc] text-[16px] rounded'>Cancel</button>
+                        <button className='bg-primary p-2 px-8 text-[#ffff] text-[16px] rounded'>Update</button>
+                    </div>
+                }
                 width={600}
                 className='custom-service-modal'
                 maskStyle={{ backgroundColor: 'rgba(134, 134, 134, 0.4)' }}
@@ -349,4 +354,4 @@ const PostListing = () => {
         </div >
     );
 };
-export default PostListing
+export default Report
