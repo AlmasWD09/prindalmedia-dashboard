@@ -176,7 +176,7 @@ const DashboardLayout = () => {
                     }}
                     trigger={null}
                 >
-                    <div className=" h-screen ">
+                    <div className=" h-dvh flex flex-col justify-between">
                         <div>
                             <div className="">
                                 <img onClick={() => navigate('/')} src="/Savorly.svg" alt="Logo" className="mx-auto py-6 w-[70%] object-cover cursor-pointer" />
@@ -273,7 +273,7 @@ const DashboardLayout = () => {
                         </div>
 
 
-                        <div className="mx-7 mt-[550px] ">
+                        <div className="pb-4 mx-2">
                             <Link to="/login">
                                 <button className="gap-3 w-full flex justify-between items-center p-3 bg-[#FFE8E8] text-base font-popping rounded-md font-semibold text-[#FF0000] ">
                                     <div className="flex items-center gap-2">
