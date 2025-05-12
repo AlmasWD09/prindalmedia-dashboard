@@ -77,26 +77,16 @@ const DashboardLayout = () => {
             path: "/report",
             title: "Activity Reports",
             icon: (
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <mask id="mask0_162_1202" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                        <rect width="24" height="24" fill="#D9D9D9" />
-                    </mask>
-                    <g mask="url(#mask0_162_1202)">
-                        <path d="M3 8H21V4H3V8ZM3 14H21V10H3V14ZM3 20H21V16H3V20ZM4 7V5H6V7H4ZM4 13V11H6V13H4ZM4 19V17H6V19H4Z" fill="#888888" />
-                    </g>
+                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16 3.16667H18C18.5304 3.16667 19.0391 3.37738 19.4142 3.75245C19.7893 4.12753 20 4.63623 20 5.16667V18.5C20 19.0304 19.7893 19.5391 19.4142 19.9142C19.0391 20.2893 18.5304 20.5 18 20.5H2C1.46957 20.5 0.960859 20.2893 0.585786 19.9142C0.210714 19.5391 0 19.0304 0 18.5L0 5.16667C0 4.63623 0.210714 4.12753 0.585786 3.75245C0.960859 3.37738 1.46957 3.16667 2 3.16667H4V0.5H5.33333V3.16667H14.6667V0.5H16V3.16667ZM8 11.1667H4V9.83333H8V11.1667ZM16 9.83333H12V11.1667H16V9.83333ZM8 15.1667H4V13.8333H8V15.1667ZM12 15.1667H16V13.8333H12V15.1667Z" fill="#888888" />
                 </svg>
-
 
             ),
             activeIcon: (
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <mask id="mask0_162_1202" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                        <rect width="24" height="24" fill="#D9D9D9" />
-                    </mask>
-                    <g mask="url(#mask0_162_1202)">
-                        <path d="M3 8H21V4H3V8ZM3 14H21V10H3V14ZM3 20H21V16H3V20ZM4 7V5H6V7H4ZM4 13V11H6V13H4ZM4 19V17H6V19H4Z" fill="#00C49A" />
-                    </g>
+                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16 3.16667H18C18.5304 3.16667 19.0391 3.37738 19.4142 3.75245C19.7893 4.12753 20 4.63623 20 5.16667V18.5C20 19.0304 19.7893 19.5391 19.4142 19.9142C19.0391 20.2893 18.5304 20.5 18 20.5H2C1.46957 20.5 0.960859 20.2893 0.585786 19.9142C0.210714 19.5391 0 19.0304 0 18.5L0 5.16667C0 4.63623 0.210714 4.12753 0.585786 3.75245C0.960859 3.37738 1.46957 3.16667 2 3.16667H4V0.5H5.33333V3.16667H14.6667V0.5H16V3.16667ZM8 11.1667H4V9.83333H8V11.1667ZM16 9.83333H12V11.1667H16V9.83333ZM8 15.1667H4V13.8333H8V15.1667ZM12 15.1667H16V13.8333H12V15.1667Z" fill="#00C49A" />
                 </svg>
+
 
             ),
         },
@@ -308,7 +298,7 @@ const DashboardLayout = () => {
                                                 key={`submenu-${index}`}
                                                 title={item.title}
                                                 icon={getMenuIcon(item.icon, item.activeIcon, isActive)}
-                                               
+
 
                                             >
                                                 {item.children.map((child, childIndex) => {

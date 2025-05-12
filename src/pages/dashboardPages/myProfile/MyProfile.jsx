@@ -44,7 +44,7 @@ const MyProfile = () => {
 
 
                 {/* upload image */}
-                <div className="pb-4 w-full">
+                <div className="pb-4 w-full pt-20">
 
                     <div className="w-full flex flex-col justify-center items-center pb-8">
 

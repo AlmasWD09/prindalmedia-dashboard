@@ -94,7 +94,7 @@ const ManageUsers = () => {
       dataIndex: 'name',
       render: (_, record) => (
         <div className='flex items-center gap-2'>
-          <img src={record.avatar} alt="" className='w-[40px] rounded-full' />
+          <img src={record.avatar} alt="" className='w-[50px] rounded-full' />
           <p className='font-semibold'>{record.name}</p>
         </div>
       ),
@@ -163,7 +163,7 @@ const ManageUsers = () => {
       name: 'John Brown',
       email: 'john@example.com',
       action: '1',
-      avatar: 'https://randomuser.me/api/portraits/men/1.jpg'
+      avatar: 'https://randomuser.me/api/portraits/men/5.jpg'
     },
     {
       key: '2',
