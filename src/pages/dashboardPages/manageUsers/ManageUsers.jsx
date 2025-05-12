@@ -67,7 +67,7 @@ const ManageUsers = () => {
   const handleDelete = () => {
     Swal.fire({
       title: "Are you sure?",
-      text: "Delete this user!",
+      text: "Deleted this user!",
       icon: "warning",
       showCancelButton: true,
       confirmButtonColor: "#3085d6",
@@ -77,15 +77,13 @@ const ManageUsers = () => {
       if (result.isConfirmed) {
         Swal.fire({
           title: "Deleted!",
-          text: "Your file has been deleted.",
+          text: "Your profile has been deleted.",
           icon: "success"
         });
       }
     });
   }
-  const handleUpdate = () => {
-    console.log('click')
-  }
+
 
   const columns = [
 
@@ -111,13 +109,6 @@ const ManageUsers = () => {
       )
     },
     {
-      title: 'Profile status',
-      dataIndex: 'profile_status',
-      render: (_, record) => (
-        <p >{record.profile_status}</p>
-      )
-    },
-    {
       title: <div className="text-right">Action</div>,
       dataIndex: "action",
       key: "action",
@@ -135,18 +126,12 @@ const ManageUsers = () => {
 
           </button>
           <button
-            onClick={() => showModalTwo()}
+            onClick={() => handleDelete()}
             className="bg-secondary px-3 py-1 rounded "
           >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <mask id="mask0_192_7314" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                <rect width="24" height="24" fill="#D9D9D9" />
-              </mask>
-              <g mask="url(#mask0_192_7314)">
-                <path d="M2 24V20H22V24H2ZM6 16H7.4L15.2 8.225L13.775 6.8L6 14.6V16ZM4 18V13.75L15.2 2.575C15.3833 2.39167 15.5958 2.25 15.8375 2.15C16.0792 2.05 16.3333 2 16.6 2C16.8667 2 17.125 2.05 17.375 2.15C17.625 2.25 17.85 2.4 18.05 2.6L19.425 4C19.625 4.18333 19.7708 4.4 19.8625 4.65C19.9542 4.9 20 5.15833 20 5.425C20 5.675 19.9542 5.92083 19.8625 6.1625C19.7708 6.40417 19.625 6.625 19.425 6.825L8.25 18H4Z" fill="#E53E3E" />
-              </g>
+            <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 1H10.5L9.5 0H4.5L3.5 1H0V3H14M1 16C1 16.5304 1.21071 17.0391 1.58579 17.4142C1.96086 17.7893 2.46957 18 3 18H11C11.5304 18 12.0391 17.7893 12.4142 17.4142C12.7893 17.0391 13 16.5304 13 16V4H1V16Z" fill="#FF5353" />
             </svg>
-
 
           </button>
         </div>
@@ -321,7 +306,7 @@ const ManageUsers = () => {
         centered
         title={
           <div className="text-center bg-primary text-[#ffffff] py-4 font-OpenSans text-[18px]  font-semibold rounded-t-lg">
-           Change profile status
+            Change profile status
           </div>
         }
         open={modalOpenTwo}
