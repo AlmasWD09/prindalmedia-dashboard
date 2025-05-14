@@ -156,7 +156,7 @@ const MyProfile = () => {
                     htmlType="submit"
                     block
                     style={{
-                        backgroundColor: "#00C49A", color: "white", fontFamily: "Roboto", padding: "24px", fontSize: "16px", fontWeight: "bold", borderRadius: "50px", border: "none",
+                        backgroundColor: "#00C49A", color: "white", fontFamily: "OpenSans", padding: "24px", fontSize: "16px", fontWeight: "bold", borderRadius: "50px", border: "none",
                         boxShadow: "none"
                     }}
                 >
