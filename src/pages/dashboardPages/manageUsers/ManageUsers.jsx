@@ -272,7 +272,7 @@ const ManageUsers = () => {
                   onChange={onChange}
                   value={value}
                   options={[
-                    { value: 'Verified', label: 'verified' },
+                    { value: 'Verified', label: 'Verified' },
                     { value: 'Unverified', label: 'Unverified' },
                   ]}
                 />
